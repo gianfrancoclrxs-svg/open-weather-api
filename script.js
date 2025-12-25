@@ -1,4 +1,4 @@
-const apiKey = "04949e5f3c9f255ec2fd6216b40db46c"
+const apiKey = "YOUR_API_KEY"
 
 const cityInput = document.getElementById("cityInput")
 const searchBtn = document.getElementById("searchBtn")
@@ -95,3 +95,4 @@ function drawChart(temps) {
 
   ctx.stroke()
 }
+
