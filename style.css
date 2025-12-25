@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  width: 380px;
+  background: #ffd000;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 45px rgba(255, 208, 0, 0.7);
+  transition: 0.3s;
+}
+
+.app.night {
+  background: #1a1a1a;
+  color: #ffd000;
+  box-shadow: 0 0 45px rgba(0,0,0,0.9);
+}
+
+.top {
+  display: flex;
+  gap: 10px;
+}
+
+.top input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+}
+
+.top button {
+  background: black;
+  color: #ffd000;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.main {
+  margin-top: 15px;
+}
+
+.current {
+  text-align: center;
+}
+
+.current img {
+  width: 80px;
+}
+
+#temp {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.details {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  font-size: 14px;
+}
+
+.details div {
+  background: rgba(0,0,0,0.1);
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.app.night .details div {
+  background: rgba(255,255,255,0.1);
+}
+
+canvas {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-between;
+}
+
+.day {
+  width: 60px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.day img {
+  width: 40px;
+}

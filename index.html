@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="top">
+      <input id="cityInput" placeholder="Search city">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div class="main">
+      <div class="current">
+        <h2 id="city">---</h2>
+        <img id="icon">
+        <div id="temp">--°C</div>
+        <div id="desc">---</div>
+      </div>
+
+      <div class="details">
+        <div>Feels Like<br><span id="feels">--°C</span></div>
+        <div>Humidity<br><span id="humidity">--%</span></div>
+        <div>Wind<br><span id="wind">-- m/s</span></div>
+        <div>Pressure<br><span id="pressure">-- hPa</span></div>
+      </div>
+    </div>
+
+    <canvas id="chart" width="340" height="120"></canvas>
+
+    <div class="forecast" id="forecast"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
